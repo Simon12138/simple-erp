@@ -7,15 +7,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import com.simon.erp.common.BusinessObject;
-
 /**
  * @author I309922
  *
  */
 @Table(name="Employees")
 @Entity
-public class Employee implements BusinessObject {
+public class Employee {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -26,6 +24,8 @@ public class Employee implements BusinessObject {
 	private String lastName;
 	
 	private String email;
+	
+	private String password;
 	
 	@Transient
 	private String displayName;
@@ -53,11 +53,19 @@ public class Employee implements BusinessObject {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	public String getDisplayName() {
 		return firstName + " " + lastName;
 	}
-
+	
 	public void setDisplayName(String displayName) {
 		this.displayName = displayName;
 	}

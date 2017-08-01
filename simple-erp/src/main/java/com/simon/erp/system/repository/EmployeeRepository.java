@@ -9,4 +9,5 @@ public interface EmployeeRepository extends CrudRepository<Employee, Long> {
 	
 	@Query("SELECT COUNT(t0) FROM Employee t0 WHERE t0.email=?1")
 	public Integer countEmployeeByEmail(String email);
+	
 }
