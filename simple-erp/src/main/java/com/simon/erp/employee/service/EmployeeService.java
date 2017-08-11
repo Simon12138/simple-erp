@@ -10,8 +10,6 @@ public interface EmployeeService {
 	
 	public boolean login(Employee employee);
 	
-	public Employee load(Long id);
-	
 	public List<Employee> list();
 	
 }
