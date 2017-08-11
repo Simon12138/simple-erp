@@ -1,9 +1,9 @@
-package com.simon.erp.system.repository;
+package com.simon.erp.employee.repository;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import com.simon.erp.system.entity.Employee;
+import com.simon.erp.employee.bo.Employee;
 
 public interface EmployeeRepository extends CrudRepository<Employee, Long> {
 	

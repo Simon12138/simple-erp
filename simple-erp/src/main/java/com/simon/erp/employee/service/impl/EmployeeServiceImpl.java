@@ -1,4 +1,4 @@
-package com.simon.erp.system.service.impl;
+package com.simon.erp.employee.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,10 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import com.simon.erp.log.common.BusinessLog;
-import com.simon.erp.system.entity.Employee;
-import com.simon.erp.system.repository.EmployeeRepository;
-import com.simon.erp.system.service.EmployeeService;
+import com.simon.erp.employee.bo.Employee;
+import com.simon.erp.employee.repository.EmployeeRepository;
+import com.simon.erp.employee.service.EmployeeService;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
@@ -36,13 +35,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 	
 	@Override
 	public boolean login(Employee employee) {
-		BusinessLog.logInfo(getClass(), "Start to login: %s", employee.getEmail());
 		String loginName = null;
 		if(!StringUtils.isEmpty(employee.getEmail())) {
 			loginName = employee.getEmail();
 		}
 		if(loginName == null) {
-			BusinessLog.logInfo(getClass(), "The email is empty.");
 			return false;
 		} else {
 			String sql = String.format("SELECT count(*) FROM Employees t0 WHERE t0.email=:email AND t0.password=:password");
@@ -51,10 +48,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 			query.setParameter("password", employee.getPassword());
 			Integer result = Integer.parseInt(query.getSingleResult().toString());
 			if(result > 0) {
-				BusinessLog.logInfo(getClass(), "Login success.");
 				return true;
 			} else {
-				BusinessLog.logInfo(getClass(), "Login failed.");
 				return false;
 			}
 		}

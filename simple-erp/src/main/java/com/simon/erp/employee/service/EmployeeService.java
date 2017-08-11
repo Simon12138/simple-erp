@@ -1,8 +1,8 @@
-package com.simon.erp.system.service;
+package com.simon.erp.employee.service;
 
 import java.util.List;
 
-import com.simon.erp.system.entity.Employee;
+import com.simon.erp.employee.bo.Employee;
 
 public interface EmployeeService {
 	

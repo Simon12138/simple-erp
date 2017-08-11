@@ -1,6 +1,9 @@
-package com.simon.erp.rest.ro;
+package com.simon.erp.employee.ro;
 
-import com.simon.erp.rest.frw.AbstractResourceObject;
+import org.dozer.Mapping;
+
+import com.simon.erp.api.frw.AbstractResourceObject;
+import com.simon.erp.employee.dto.EmployeePositionDTO;
 
 public class EmployeeRO extends AbstractResourceObject {
 	
@@ -9,6 +12,13 @@ public class EmployeeRO extends AbstractResourceObject {
 	private String email;
 	
 	private String password;
+	
+	@Mapping("position")
+	private EmployeePositionDTO position;
+	
+	public EmployeeRO() {
+		
+	}
 
 	public String getId() {
 		return id;
@@ -33,5 +43,12 @@ public class EmployeeRO extends AbstractResourceObject {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
+	public EmployeePositionDTO getPosition() {
+		return position;
+	}
+
+	public void setPosition(EmployeePositionDTO position) {
+		this.position = position;
+	}
 }

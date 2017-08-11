@@ -1,6 +1,6 @@
-package com.simon.erp.rest.frw.service;
+package com.simon.erp.api.frw.service;
 
-import com.simon.erp.rest.frw.AbstractResourceObject;
+import com.simon.erp.api.frw.AbstractResourceObject;
 
 public interface AbstractResourceObjectService {
 	
