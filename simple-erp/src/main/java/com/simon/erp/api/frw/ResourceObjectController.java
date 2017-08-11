@@ -6,5 +6,5 @@ public interface ResourceObjectController <RO extends AbstractResourceObject> {
 	
 	public ResponseEntity<RO> get(Long id, String select);
 
-    public ResponseEntity<RO[]> list(String select);
+//    public ResponseEntity<RO[]> list(String select);
 }

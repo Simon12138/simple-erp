@@ -9,13 +9,15 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import com.simon.erp.bo.frw.BusinessObject;
+
 /**
  * @author I309922
  *
  */
 @Table(name="Employees")
 @Entity
-public class Employee {
+public class Employee extends BusinessObject {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

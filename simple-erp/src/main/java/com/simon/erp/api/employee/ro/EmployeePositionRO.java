@@ -1,4 +1,4 @@
-package com.simon.erp.employee.ro;
+package com.simon.erp.api.employee.ro;
 
 import com.simon.erp.api.frw.AbstractResourceObject;
 

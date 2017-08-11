@@ -1,4 +1,4 @@
-package com.simon.erp.employee.dto;
+package com.simon.erp.api.employee.dto;
 
 import com.simon.erp.api.frw.DataTransferObject;
 

@@ -1,9 +1,9 @@
-package com.simon.erp.employee.ro;
+package com.simon.erp.api.employee.ro;
 
 import org.dozer.Mapping;
 
+import com.simon.erp.api.employee.dto.EmployeePositionDTO;
 import com.simon.erp.api.frw.AbstractResourceObject;
-import com.simon.erp.employee.dto.EmployeePositionDTO;
 
 public class EmployeeRO extends AbstractResourceObject {
 	

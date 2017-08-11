@@ -10,12 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import com.simon.erp.bo.frw.BusinessObject;
+import com.simon.erp.bo.frw.service.BusinessObjectService;
 import com.simon.erp.employee.bo.Employee;
 import com.simon.erp.employee.repository.EmployeeRepository;
 import com.simon.erp.employee.service.EmployeeService;
 
 @Service
-public class EmployeeServiceImpl implements EmployeeService {
+public class EmployeeServiceImpl implements EmployeeService, BusinessObjectService<BusinessObject> {
 	
 	@Autowired
 	private EmployeeRepository repository;
