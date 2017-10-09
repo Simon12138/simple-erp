@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
+import com.simon.erp.db.utils.DBScriptRunner;
+
 @SpringBootApplication
 @EnableAspectJAutoProxy
 @ComponentScan
@@ -12,5 +14,6 @@ public class ApplicationEntry {
 	
 	public static void main(String[] args) throws Exception {
         SpringApplication.run(ApplicationEntry.class, args);
+        DBScriptRunner.initData();
     }
 }
