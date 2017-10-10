@@ -1,11 +1,12 @@
-package com.simon.erp;
+package com.simon.mgr.employee;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
-import com.simon.erp.db.utils.DBScriptRunner;
+import com.simon.mgr.common.utils.DBScriptRunner;
+
 
 @SpringBootApplication
 @EnableAspectJAutoProxy

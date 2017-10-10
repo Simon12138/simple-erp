@@ -1,4 +1,4 @@
-package com.simon.erp.employee.service.impl;
+package com.simon.mgr.employee.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,9 +6,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.simon.erp.employee.bo.Employee;
-import com.simon.erp.employee.repo.EmployeeRepository;
-import com.simon.erp.employee.service.EmployeeService;
+import com.simon.mgr.employee.bo.Employee;
+import com.simon.mgr.employee.repo.EmployeeRepository;
+import com.simon.mgr.employee.service.EmployeeService;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
@@ -29,6 +29,16 @@ public class EmployeeServiceImpl implements EmployeeService {
 		ArrayList<Employee> employees = new ArrayList<>();
 		employeeRepo.findAll().forEach(item -> employees.add(item));
 		return employees;
+	}
+
+	@Override
+	public Employee createEmployee(Employee employee) {
+		return employeeRepo.save(employee);
+	}
+
+	@Override
+	public Employee updateEmployee(Employee employee) {
+		return employeeRepo.save(employee);
 	}
 
 }

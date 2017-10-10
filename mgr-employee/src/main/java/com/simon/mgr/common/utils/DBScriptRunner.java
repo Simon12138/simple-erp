@@ -1,4 +1,4 @@
-package com.simon.erp.db.utils;
+package com.simon.mgr.common.utils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,6 +19,7 @@ public class DBScriptRunner {
 	
 	private final static String INIT_DB_SCRIPT = "/initdb/initdb.sql";
 	
+	@SuppressWarnings("resource")
 	public static void initData() {
 		// Start to load database information
 		Properties properties = new Properties();

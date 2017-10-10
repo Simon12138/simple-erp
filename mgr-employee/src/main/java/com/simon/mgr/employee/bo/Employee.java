@@ -1,7 +1,17 @@
-package com.simon.erp.api.employee.ro;
+package com.simon.mgr.employee.bo;
 
-public class EmployeeRO {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Table
+@Entity
+public class Employee {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	private String email;
@@ -31,4 +41,5 @@ public class EmployeeRO {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 }
