@@ -1,4 +1,4 @@
-package com.simon.mgr.common.utils;
+package com.simon.mgr.utils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,7 +17,7 @@ public class DBScriptRunner {
 	
 	private final static String DB_INFO_FILE = "/application.properties";
 	
-	private final static String INIT_DB_SCRIPT = "/initdb/initdb.sql";
+	private final static String INIT_DB_SCRIPT = "/dbscripts/init/initdb.sql";
 	
 	@SuppressWarnings("resource")
 	public static void initData() {

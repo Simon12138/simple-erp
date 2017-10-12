@@ -36,3 +36,17 @@
 /mgr-employee/.settings/org.eclipse.wst.jsdt.ui.superType.name
 /mgr-employee/.settings/org.eclipse.wst.validation.prefs
 /mgr-employee/.gitignore
+/mgr-parent/.settings/org.eclipse.core.resources.prefs
+/mgr-parent/.settings/org.eclipse.m2e.core.prefs
+/mgr-web/.classpath
+/mgr-web/.gitignore
+/mgr-web/.project
+/mgr-web/.settings/.jsdtscope
+/mgr-web/.settings/org.eclipse.core.resources.prefs
+/mgr-web/.settings/org.eclipse.jdt.core.prefs
+/mgr-web/.settings/org.eclipse.m2e.core.prefs
+/mgr-web/.settings/org.eclipse.wst.common.component
+/mgr-web/.settings/org.eclipse.wst.common.project.facet.core.xml
+/mgr-web/.settings/org.eclipse.wst.jsdt.ui.superType.container
+/mgr-web/.settings/org.eclipse.wst.jsdt.ui.superType.name
+/mgr-web/.settings/org.eclipse.wst.validation.prefs

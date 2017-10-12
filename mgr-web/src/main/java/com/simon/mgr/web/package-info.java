@@ -5,4 +5,4 @@
  * @author I309922
  *
  */
-package com.simon.mgr.common;
+package com.simon.mgr.web;
